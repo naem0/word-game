@@ -30,7 +30,7 @@ export default function Home() {
 
   const handleGame = async () => {
     try {
-      const response = await fetch('http://localhost:3001/game', {
+      const response = await fetch('https://word-game-server-fawn.vercel.app/game', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ word: word, lastWord: lastWord }),
